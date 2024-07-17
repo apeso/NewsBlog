@@ -1,0 +1,51 @@
+@import 'variables';
+@import 'mixins';
+
+.bottomHeader{
+  position: absolute;
+  width: 1602px;
+  height: 53px;
+  left: -1px;
+  top:52px;
+  background-color: #4D4382;
+  @include flex-center;
+}
+.bottomNav {
+  width: 60%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  
+  
+}
+
+.navItem {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px; 
+  font-family: 'Bitter', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.6px;
+  border-bottom: 3px solid transparent;
+  transition: background-color 0.3s ease;
+
+  &:hover,
+  &.active {
+    background-color: #299EC3;
+  }
+}
+
+  .news { border-bottom-color: #299EC3; }
+  .business { border-bottom-color: #EE6151; }
+  .sport { border-bottom-color: #84C14F; }
+  .life { border-bottom-color: #5DCFF3;}
+  .tech {border-bottom-color: #FCC44D;}
+  .travel { border-bottom-color: #A99765; }
+  
+
+  .active {
+    background-color: #299EC3;
+    border-bottom: none;
+  }
