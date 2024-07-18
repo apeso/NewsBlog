@@ -1,6 +1,7 @@
 import React from 'react';
-import TopHeader from './components/Header/TopHeader.jsx';
-import BottomHeader from './components/Header/BottomHeader.jsx';
+import TopHeader from './components/Header/TopHeader.tsx';
+import BottomHeader from './components/Header/BottomHeader.tsx';
+import Home from './components/Home/Home.tsx';
 
 
 const App: React.FC = () => {
@@ -8,6 +9,7 @@ const App: React.FC = () => {
     <>
       <TopHeader />
       <BottomHeader />
+      <Home />
     </>
   );
 };
