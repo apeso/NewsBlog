@@ -11,3 +11,10 @@
   align-items: $align-items;
   gap: $gap;
 }
+
+@mixin flex-column($align-items: center, $justify-content: center) {
+  display: flex;
+  flex-direction: column;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}

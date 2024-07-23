@@ -2,12 +2,9 @@
 @import 'mixins';
 
 .bottomHeader{
-  position: absolute;
-  width: 1602px;
+  width: 100%;
   height: 53px;
-  left: -1px;
-  top:52px;
-  background-color: #4D4382;
+  background-color: $purple;
   @include flex-center;
 }
 .bottomNav {

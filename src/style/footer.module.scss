@@ -1,0 +1,191 @@
+@import 'variables';
+@import 'mixins';
+
+.footer {
+  width: 100%;
+  height: 934px;
+  background-color: $header-bg-color;
+  color: $white;
+  font-family: $font-primary;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .footerPurpleBlock {
+    width: 100%;
+    height: 23px;
+    background-color: $purple;
+  }
+
+  .footerContainer {
+    width: 60%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .footerTop {
+        display: flex;
+        justify-content: space-between;
+      margin-bottom: 40px;
+    }
+
+    .footerSection {
+      flex: 1;
+      margin-right: 20px;
+
+      p {
+        font-size: $font-size-medium;
+        line-height: $line-height-small;
+        color: #666666;
+      }
+
+      h2 {
+        color: #CCCCCC;
+        font-weight: 700;
+        font-size: $font-size-large;
+      }
+    }
+
+    .footerBottom {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footerCopy {
+      font-family: $font-secondary;
+      text-align: center;
+      font-size: $font-size-small;
+      margin-top: 20px;
+      color: #999999;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .logoContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    img {
+      width: 28px;
+      height: 43px;
+    }
+
+    span {
+      color: #45B0E3;
+      font-size: 29.62px;
+      line-height: $line-height-medium;
+    }
+  }
+
+  form {
+    display: flex;
+    font-family: $font-secondary;
+    font-size: 16px;
+    font-weight: 400;
+    height: 53px;
+
+    input[type='email'] {
+      flex: 2;
+      border: none;
+      background-color: #333333;
+      color: #999999;
+    }
+
+    button {
+      flex: 1;
+      border: none;
+      background-color: $purple;
+      color: #CCCCCC;
+      cursor: pointer;
+    }
+  }
+
+  .socialLinks {
+    display: flex;
+    gap: 10px;
+    a {
+      img {
+        width: 38px;
+        height: 38px;
+      }
+    }
+  }
+
+  .post{
+    display: flex;
+    flex-direction: column;
+
+    p {
+      font-size: $font-size-small;
+      margin: 0;
+
+      a {
+        color: #1da1f2;
+        text-decoration: none;
+      }
+    }
+   
+  }
+
+.tweet{
+  display: flex;
+  flex-direction: column;
+  color: #CCCCCC;
+  font-family: $font-secondary;
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 20px;
+
+  img {
+    width: 24px;
+    height: 18px;
+  }
+  span{
+    font-family: $font-secondary;
+  }
+
+  .tweetAuthor{
+    font-size: $font-size-medium;
+    display: flex;
+    justify-content: flex-start;
+    gap:10px;
+    color: #666666;
+    margin-bottom: 10px;
+  }
+  
+}
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    a {
+      padding: 0 10px;
+      height: 28px;
+      margin: 2px;
+      background-color: #333333;
+      text-decoration: none;
+      color: #666666;
+      font-size: $font-size-small;
+      line-height: $line-height-small;
+
+      &:hover {
+        background-color: $purple;
+        color: #CCCCCC;
+      }
+    }
+  }
+
+  .separator {
+    width: 100%;
+    height: 1px;
+    background: #666666;
+    opacity: 0.2;
+    margin-top: 10px;
+  }
+}
