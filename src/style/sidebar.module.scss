@@ -1,0 +1,159 @@
+@import 'variables';
+@import 'mixins';
+
+.sidebar{
+    display: flex;
+    flex-direction: column;  
+    gap:20px; 
+    margin-bottom: 20px;
+}
+
+.posts{
+    background-color: $purple;
+}
+
+.tabMenu {
+    background-color: #3b2d56;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 53px; 
+}
+
+.tab {
+    margin-right: 20px;
+    color: #FFFFFF;
+    border-bottom: 2px solid rgba(172, 179, 186, 0.3);
+    cursor: pointer;
+    font-family: $font-secondary;
+    font-size: $font-size-medium;
+    
+}
+
+.tab:hover, .tab:active {
+    color: #b58630;
+    border-bottom: 2px solid #b58630;
+}
+
+
+.socialWidget {
+    width: 100%;
+    font-weight: 700;
+    color: #363F48;
+    font-family: $font-primary;
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .socialItem {
+        width: 100%;
+        height: 43px;
+        display: flex;
+        flex-direction: row;
+        align-items: center ;
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .socialIcon {
+        height: 100%;
+        img{
+            width: 43px;
+            height: 43px;
+        }
+    }
+
+    .socialText {
+        flex: 1;
+        background-color: #DDDDDD;
+        padding: 9px;
+    }
+
+    .socialCount {
+        background-color: $purple;
+        color: #FFFFFF;
+        font-family: $font-secondary;
+        font-weight: 400;
+        font-size: 14px;
+        flex:1;
+        padding: 10px;
+    }
+}
+
+.sidebarBanner{
+    background-color: #DDDDDD;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+
+.videoWidget {
+    background-color: #FFFFFF;
+  
+    h2 {
+        padding: 20px;
+        color: #363F48;
+        font-family: $font-primary;
+        font-weight: 700;
+        font-size: 24px;
+    }
+  
+    .videoThumbnail {
+        position: relative; 
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+    
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+    
+        .playButton {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 62px;
+          height: 43px;
+          background: rgba(0, 0, 0, 0.7);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+    
+          img {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    .videoDetails {
+      text-align: left;
+      padding: 20px;
+  
+      .date {
+        font-family: $font-secondary;
+        color: #777;
+        font-size: 12px;
+        margin-bottom: 5px;
+      }
+  
+      .title {
+        font-family: $font-primary;
+        font-size: 14px;
+        font-weight: bold;
+        font-weight: 700;
+      }
+    }
+  }
+  
