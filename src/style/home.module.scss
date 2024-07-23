@@ -10,8 +10,10 @@
 }
 
 .homeContainer{
+    display: flex;
+    flex-direction: column;
     width: 942px;
-    
+    gap: 20px;
 }
 
 .homeContent{
